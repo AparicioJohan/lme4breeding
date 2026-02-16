@@ -36,6 +36,7 @@ A <- A_example
 ans1 <- lmeb(Yield~ (1|Name) + (1|Env) + 
                    (1|Env:Name) + (1|Env:Block),
              verbose = FALSE, data=DT)
+fixef(ans1)
 ```
 
 ### 2) Extracting variance-covariance components
@@ -70,7 +71,7 @@ This matrix is also included in the attributes of the object returned by the `ra
 One of the most searched functions in genetic evaluation is the `predict()` function which aims to compute linear combinations for fixed and random effects.
 
 ```{r}
-pp <- predict(ans1, classify="Name")
+pp <- lme4breeding::predict.lmeb(ans1, classify="Name")
 head(pp$pvals)
 ```
 

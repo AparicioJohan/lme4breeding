@@ -1,6 +1,6 @@
 Package: lme4breeding
-Version: 1.1.0
-Date: 2025-11-18
+Version: 1.1.1
+Date: 2026-02-14
 Title: Breeding-Related Mixed-Effects Models
 Authors@R: c(
     person("Giovanny","Covarrubias-Pazaran", email="cova_ruber@live.com.mx", role=c("aut","cre"),
